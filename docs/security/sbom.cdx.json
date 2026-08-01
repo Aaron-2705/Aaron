@@ -1,0 +1,4599 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:be86f883-bf66-4cef-8a01-b8a93132f128",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-07-28T05:39:15.669Z",
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "tools": [
+      {
+        "vendor": "npm",
+        "name": "cli",
+        "version": "10.9.8"
+      }
+    ],
+    "component": {
+      "bom-ref": "aaron@0.1.0",
+      "type": "library",
+      "name": "aaron",
+      "version": "0.1.0",
+      "scope": "required",
+      "purl": "pkg:npm/aaron@0.1.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": ""
+        },
+        {
+          "name": "cdx:npm:package:private",
+          "value": "true"
+        }
+      ],
+      "externalReferences": []
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "@babel/runtime@7.29.7",
+      "type": "library",
+      "name": "@babel/runtime",
+      "version": "7.29.7",
+      "scope": "required",
+      "author": "The Babel Team",
+      "description": "babel's modular runtime helpers",
+      "purl": "pkg:npm/%40babel/runtime@7.29.7",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@babel/runtime"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@babel/runtime/-/runtime-7.29.7.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/babel/babel.git"
+        },
+        {
+          "type": "website",
+          "url": "https://babel.dev/docs/en/next/babel-runtime"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/babel/babel/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "36af0e8465a264864657a84b1e8c8028b2dc26284fff115e04c189a14af14d7da9b08f1d0a27f32e16484856fe5564b7c053110e6086c3947e74ec920aa3cb87"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@emnapi/core@1.10.0",
+      "type": "library",
+      "name": "@emnapi/core",
+      "version": "1.10.0",
+      "scope": "optional",
+      "author": "toyobayashi",
+      "description": "emnapi core",
+      "purl": "pkg:npm/%40emnapi/core@1.10.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@emnapi/core"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:extraneous",
+          "value": "true"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@emnapi/core/-/core-1.10.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/toyobayashi/emnapi.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/toyobayashi/emnapi#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/toyobayashi/emnapi/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "caae8e909e29f360807cf974bbd99079b40728f26463b5ab22e936d3971362761efa4d99f18061d7516b6d11bf1fa8a18aba9c69c3a09760483bca323102de5f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@emnapi/runtime@1.11.2",
+      "type": "library",
+      "name": "@emnapi/runtime",
+      "version": "1.11.2",
+      "scope": "optional",
+      "author": "toyobayashi",
+      "description": "emnapi runtime",
+      "purl": "pkg:npm/%40emnapi/runtime@1.11.2",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@emnapi/runtime"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:extraneous",
+          "value": "true"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.11.2.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/toyobayashi/emnapi.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/toyobayashi/emnapi#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/toyobayashi/emnapi/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "9323a5dd7d03b93893d61d9fb7caf67d83bc258b54f5af578acff305288602b35a6a008e5b1f74375936c31a75f1ccc50c7f8e81c5866f964ffd732dddd7323c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@emnapi/wasi-threads@1.2.1",
+      "type": "library",
+      "name": "@emnapi/wasi-threads",
+      "version": "1.2.1",
+      "scope": "optional",
+      "author": "toyobayashi",
+      "description": "WASI threads proposal implementation in JavaScript",
+      "purl": "pkg:npm/%40emnapi/wasi-threads@1.2.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@emnapi/wasi-threads"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:extraneous",
+          "value": "true"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@emnapi/wasi-threads/-/wasi-threads-1.2.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/toyobayashi/emnapi.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/toyobayashi/emnapi#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/toyobayashi/emnapi/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "b93208ece605fbf31eb3f32b708398a79c8eb5230b056488a0b3e9720c22a6888a6e58ba937db6b5ca05b31a082313c3a96d35490180824a38133662d8136fdb"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@gsap/react@2.1.2",
+      "type": "library",
+      "name": "@gsap/react",
+      "version": "2.1.2",
+      "scope": "required",
+      "author": "Jack Doyle",
+      "description": "Tools for using GSAP in React, like useGSAP() which is a drop-in replacement for useLayoutEffect()/useEffect()",
+      "purl": "pkg:npm/%40gsap/react@2.1.2",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@gsap/react"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@gsap/react/-/react-2.1.2.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/greensock/react.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/greensock/react#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://gsap.com/community/"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "26a962c9b3b5f37ed47201f685538ce153bedfc00f93710236bb2e48ce0cb97a7eadb7feff6206d8ad58262a9f4dc5d01c7ed7940d26df292788562cb5fab423"
+        }
+      ]
+    },
+    {
+      "bom-ref": "@img/colour@1.1.0",
+      "type": "library",
+      "name": "@img/colour",
+      "version": "1.1.0",
+      "scope": "optional",
+      "description": "The ESM-only 'color' package made compatible for use with CommonJS runtimes",
+      "purl": "pkg:npm/%40img/colour@1.1.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@img/colour"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@img/colour/-/colour-1.1.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/lovell/colour.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/lovell/colour#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/lovell/colour/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "4ddefaabb8f9ee8fed2d57604bbe3a7180117d2cb193c8847d1c5ec0bf61e0e3336216d6e1301ca69974993e1ecaa5dd761e8bfe3c2833be66a3b8b16bfa4279"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@img/sharp-win32-x64@0.34.5",
+      "type": "library",
+      "name": "@img/sharp-win32-x64",
+      "version": "0.34.5",
+      "scope": "optional",
+      "author": "Lovell Fuller",
+      "description": "Prebuilt sharp for use with Windows x64",
+      "purl": "pkg:npm/%40img/sharp-win32-x64@0.34.5",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@img/sharp-win32-x64"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@img/sharp-win32-x64/-/sharp-win32-x64-0.34.5.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/lovell/sharp.git"
+        },
+        {
+          "type": "website",
+          "url": "https://sharp.pixelplumbing.com"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/lovell/sharp/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "fb6f5832ca98dbff5e144896f777aa5a7b8b71672e7e8c177b0c123484fa53065d5140ab337a058cc587fd9ebf4cc99be219457a799f0156e959eba9da3af20b"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "Apache-2.0 AND LGPL-3.0-or-later"
+        }
+      ]
+    },
+    {
+      "bom-ref": "@mediapipe/tasks-vision@0.10.17",
+      "type": "library",
+      "name": "@mediapipe/tasks-vision",
+      "version": "0.10.17",
+      "scope": "required",
+      "author": "mediapipe@google.com",
+      "description": "MediaPipe Vision Tasks",
+      "purl": "pkg:npm/%40mediapipe/tasks-vision@0.10.17",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@mediapipe/tasks-vision"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@mediapipe/tasks-vision/-/tasks-vision-0.10.17.tgz"
+        },
+        {
+          "type": "website",
+          "url": "http://mediapipe.dev"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "099595feae934def2d6bad5c6578df9e71ec7d621d1619acd3733d4fb0a7779cb699da72949334ac5d6a46afb0b1055130bcf53983d510153da61d81c7c731ae"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@monogrid/gainmap-js@3.4.0",
+      "type": "library",
+      "name": "@monogrid/gainmap-js",
+      "version": "3.4.0",
+      "scope": "required",
+      "author": "MONOGRID",
+      "description": "A Javascript (TypeScript) Port of Adobe Gainmap Technology for storing HDR Images using an SDR Image + a gain map",
+      "purl": "pkg:npm/%40monogrid/gainmap-js@3.4.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@monogrid/gainmap-js"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@monogrid/gainmap-js/-/gainmap-js-3.4.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+ssh://git@github.com/MONOGRID/gainmap-js.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/MONOGRID/gainmap-js#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/MONOGRID/gainmap-js/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "d99d050131476a8609f1bf98e32e0781f9f7151170b94e7346b93ef5d156a78b8601d1c6a9511d3fb1cffa02c0dd7e3af4a5c799fba925a51b2a8d5bfda0ca22"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@napi-rs/wasm-runtime@1.1.6",
+      "type": "library",
+      "name": "@napi-rs/wasm-runtime",
+      "version": "1.1.6",
+      "scope": "optional",
+      "author": "LongYinan",
+      "description": "Runtime and polyfill for wasm targets",
+      "purl": "pkg:npm/%40napi-rs/wasm-runtime@1.1.6",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@napi-rs/wasm-runtime"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:extraneous",
+          "value": "true"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@napi-rs/wasm-runtime/-/wasm-runtime-1.1.6.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/napi-rs/napi-rs.git"
+        },
+        {
+          "type": "website",
+          "url": "https://napi.rs/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/napi-rs/napi-rs/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "64bbff25d51f92f3b2f5e0a79c16867e23be5e299b8de6c078ef8c450a83fc1f85475b6744dd2da4a4891d16c4f2c15f4ba6aab1767aed34237f07ecc542d56e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@next/env@16.2.12",
+      "type": "library",
+      "name": "@next/env",
+      "version": "16.2.12",
+      "scope": "required",
+      "author": "Next.js Team",
+      "description": "Next.js dotenv file loading",
+      "purl": "pkg:npm/%40next/env@16.2.12",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@next/env"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@next/env/-/env-16.2.12.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/vercel/next.js.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/vercel/next.js#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/vercel/next.js/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "77467905cd7715ae2747ca4500ac768dacb6ca124cd7abe57c76d3cd89d4400c6535be81ea59a7e218edebd95836de2446dc983fa804338f653d11cd6c8ca77a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@next/swc-win32-x64-msvc@16.2.12",
+      "type": "library",
+      "name": "@next/swc-win32-x64-msvc",
+      "version": "16.2.12",
+      "scope": "optional",
+      "purl": "pkg:npm/%40next/swc-win32-x64-msvc@16.2.12",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@next/swc-win32-x64-msvc"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-16.2.12.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/vercel/next.js.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/vercel/next.js#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/vercel/next.js/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "17a7da91e1ee1532ce3edd1bb2540975ffb1b53f9620ff43567fe6e32d70d6646754fca1dc3fdc36fce5464c4ce38e317e6f88bef60d48eaca880d820c9d14c7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@phosphor-icons/react@2.1.10",
+      "type": "library",
+      "name": "@phosphor-icons/react",
+      "version": "2.1.10",
+      "scope": "required",
+      "author": "Tobias Fried",
+      "description": "A clean and friendly icon family for React",
+      "purl": "pkg:npm/%40phosphor-icons/react@2.1.10",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@phosphor-icons/react"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@phosphor-icons/react/-/react-2.1.10.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/phosphor-icons/react.git"
+        },
+        {
+          "type": "website",
+          "url": "https://phosphoricons.com"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/phosphor-icons/react/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "bedf13beaf062e385e0196586be606fe95bb1c36e8bfc125fcc00d5bca4e033e1e1b1af08676dfad066ad02a78abccc112ef0d2211dd9ebfabf2d8677d148d60"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@react-three/drei@10.7.7",
+      "type": "library",
+      "name": "@react-three/drei",
+      "version": "10.7.7",
+      "scope": "required",
+      "description": "useful add-ons for react-three-fiber",
+      "purl": "pkg:npm/%40react-three/drei@10.7.7",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@react-three/drei"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@react-three/drei/-/drei-10.7.7.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/drei.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/drei"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/drei/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "7dff89e62968474938b42fbe42d0ff8fdbb7c397f37e0140583b401906a1f691760756203aaff9271a98d3f695a101b9af7c52673d1cbf9b64d98b81a1be3111"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@react-three/fiber@9.6.1",
+      "type": "library",
+      "name": "@react-three/fiber",
+      "version": "9.6.1",
+      "scope": "required",
+      "author": "Paul Henschel",
+      "description": "A React renderer for Threejs",
+      "purl": "pkg:npm/%40react-three/fiber@9.6.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@react-three/fiber"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@react-three/fiber/-/fiber-9.6.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/react-three-fiber.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/react-three-fiber#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/react-three-fiber/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "cc5d2bb0a715629709c1b1449efd879075fd72f38482c7d0a3f5fc970991d9d9f5dd2e2a1102578abf5fc5fe63b362d01685eac4e63b30390e918c76b99e204a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@react-three/postprocessing@3.0.4",
+      "type": "library",
+      "name": "@react-three/postprocessing",
+      "version": "3.0.4",
+      "scope": "required",
+      "description": "postprocessing wrapper for React and @react-three/fiber",
+      "purl": "pkg:npm/%40react-three/postprocessing@3.0.4",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@react-three/postprocessing"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@react-three/postprocessing/-/postprocessing-3.0.4.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/react-postprocessing.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/react-postprocessing#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/react-postprocessing/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "7b8f85e71b6e74362f871c77cb436d597a596f0bd0d31d7374e5d64db5cc2ba7c52d50dde2ab9c37dd1869a4ad6a76464b805de6c8909b49462ffe6881ff220d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "maath@0.6.0",
+      "type": "library",
+      "name": "maath",
+      "version": "0.6.0",
+      "scope": "required",
+      "purl": "pkg:npm/maath@0.6.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@react-three/postprocessing/node_modules/maath"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/maath/-/maath-0.6.0.tgz"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "7526f6c50b8feef0e7698a9fa0ace5029791711db1b4df3f7fb595fd33009010bce79d93c132ed38ed094dc4b282460c8cd0cfa28e95d358d3c3f68f8b826b33"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@swc/helpers@0.5.15",
+      "type": "library",
+      "name": "@swc/helpers",
+      "version": "0.5.15",
+      "scope": "required",
+      "author": "강동윤",
+      "description": "External helpers for the swc project.",
+      "purl": "pkg:npm/%40swc/helpers@0.5.15",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@swc/helpers"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.15.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/swc-project/swc.git"
+        },
+        {
+          "type": "website",
+          "url": "https://swc.rs"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/swc-project/swc/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "250e53b8c8b8e4ec22e3f048300241a12428389bb5da83a4fe0003aa57142fd24474707cbf28d44acc6a78d5e79971e360a322d96718b5ecc610486a508fc4da"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@tybys/wasm-util@0.10.3",
+      "type": "library",
+      "name": "@tybys/wasm-util",
+      "version": "0.10.3",
+      "scope": "optional",
+      "author": "toyobayashi",
+      "description": "WASI polyfill for browser and some wasm util",
+      "purl": "pkg:npm/%40tybys/wasm-util@0.10.3",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@tybys/wasm-util"
+        },
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:extraneous",
+          "value": "true"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@tybys/wasm-util/-/wasm-util-0.10.3.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/toyobayashi/wasm-util.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/toyobayashi/wasm-util#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/toyobayashi/wasm-util/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "1777e8d4c62b44960bdf3111d0e50e9a4bad8ebd55a76de6eceb12829ee7ab848fe8ea97e82ff9e971483c09796eddf3681463996ed21b3deeffa2f016961c3a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@types/draco3d@1.4.10",
+      "type": "library",
+      "name": "@types/draco3d",
+      "version": "1.4.10",
+      "scope": "required",
+      "description": "TypeScript definitions for draco3d",
+      "purl": "pkg:npm/%40types/draco3d@1.4.10",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@types/draco3d"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@types/draco3d/-/draco3d-1.4.10.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/draco3d"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "017db68e9f18ef0c1a060022c5a4af9281b833ff8f940726dd0b38396f324fd0cce3152958a78584bb9e4c0c99177f69be201d70375e2680026a988071ea8d73"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@types/offscreencanvas@2019.7.3",
+      "type": "library",
+      "name": "@types/offscreencanvas",
+      "version": "2019.7.3",
+      "scope": "required",
+      "description": "TypeScript definitions for offscreencanvas",
+      "purl": "pkg:npm/%40types/offscreencanvas@2019.7.3",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@types/offscreencanvas"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@types/offscreencanvas/-/offscreencanvas-2019.7.3.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/offscreencanvas"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "89e5e262681245750378e9ed135227c635b2bc47a56463fadccf9c1aeaaeb912ee20a293d68b279178f17aff41eddd675d2ba0e6fa6e9f1fa03656d5c4c942f4"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@types/react-reconciler@0.28.9",
+      "type": "library",
+      "name": "@types/react-reconciler",
+      "version": "0.28.9",
+      "scope": "required",
+      "description": "TypeScript definitions for react-reconciler",
+      "purl": "pkg:npm/%40types/react-reconciler@0.28.9",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@types/react-reconciler"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@types/react-reconciler/-/react-reconciler-0.28.9.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-reconciler"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "1c73379f1c94677cc0ca55fc644cab0cd7765d93a74340f95dfba7245e452d09d96c71d8ab8516bd6d507de950357bf5202364c1885fc63c1f9ea8af601e9b16"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@use-gesture/core@10.3.1",
+      "type": "library",
+      "name": "@use-gesture/core",
+      "version": "10.3.1",
+      "scope": "required",
+      "author": "Paul Henschel",
+      "description": "Core engine for receiving gestures",
+      "purl": "pkg:npm/%40use-gesture/core@10.3.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@use-gesture/core"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@use-gesture/core/-/core-10.3.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/use-gesture.git"
+        },
+        {
+          "type": "website",
+          "url": "https://use-gesture.netlify.app"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/use-gesture/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "59c20d883b7c5a3a817545f27b6e5a9c788dc4f73454eae54fc17a2cb914e9cc9cace1940f263fcb2166b20de4f22e4e2efbf6e6595cd100b8e46851fc2f2597"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@use-gesture/react@10.3.1",
+      "type": "library",
+      "name": "@use-gesture/react",
+      "version": "10.3.1",
+      "scope": "required",
+      "author": "Paul Henschel",
+      "description": "React target for @use-gesture",
+      "purl": "pkg:npm/%40use-gesture/react@10.3.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@use-gesture/react"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@use-gesture/react/-/react-10.3.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/use-gesture.git"
+        },
+        {
+          "type": "website",
+          "url": "https://use-gesture.netlify.app"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/use-gesture/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "632d7dcba3b6189abc7fb0877fb2f49f12fc6dfe0f6423da54e0a026bbac39e1476352ef1e06179e69d783a3798b00276e06d90838e8eb44a233a20f262f42e6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "base64-js@1.5.1",
+      "type": "library",
+      "name": "base64-js",
+      "version": "1.5.1",
+      "scope": "required",
+      "author": "T. Jameson Little",
+      "description": "Base64 encoding/decoding in pure JS",
+      "purl": "pkg:npm/base64-js@1.5.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/base64-js"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git://github.com/beatgammit/base64-js.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/beatgammit/base64-js"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/beatgammit/base64-js/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "00aa5a6251e7f2de1255b3870b2f9be7e28a82f478bebb03f2f6efadb890269b3b7ca0d3923903af2ea38b4ad42630b49336cd78f2f0cf1abc8b2a68e35a9e58"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "bidi-js@1.0.3",
+      "type": "library",
+      "name": "bidi-js",
+      "version": "1.0.3",
+      "scope": "required",
+      "author": "Jason Johnston",
+      "description": "A JavaScript implementation of the Unicode Bidirectional Algorithm",
+      "purl": "pkg:npm/bidi-js@1.0.3",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/bidi-js"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/bidi-js/-/bidi-js-1.0.3.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/lojjic/bidi-js.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/lojjic/bidi-js#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/lojjic/bidi-js/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "44ab21408d51dd843e9fd609cf6410d78ecfeba10ba5ad45404836d0393ca16f6dd8a80b6e90cb2e9f5a199ef2f161d2b210e49c6d1b927a86c39fedc82b39b7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "buffer@6.0.3",
+      "type": "library",
+      "name": "buffer",
+      "version": "6.0.3",
+      "scope": "required",
+      "author": "Feross Aboukhadijeh",
+      "description": "Node.js Buffer API, for the browser",
+      "purl": "pkg:npm/buffer@6.0.3",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/buffer"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/buffer/-/buffer-6.0.3.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git://github.com/feross/buffer.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/feross/buffer"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/feross/buffer/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "153882a4dc6dc226591c465b71b4c87198c44552029fdcaafe90c591397de7f031cc3d6768172d37b60eebcae233f80b48363bb1dacc6f2f21a1f00362ebaa38"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "camera-controls@3.1.2",
+      "type": "library",
+      "name": "camera-controls",
+      "version": "3.1.2",
+      "scope": "required",
+      "author": "Yomotsu",
+      "purl": "pkg:npm/camera-controls@3.1.2",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/camera-controls"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/camera-controls/-/camera-controls-3.1.2.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/yomotsu/camera-controls.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/yomotsu/camera-controls#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/yomotsu/camera-controls/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "c64c5fa46d84099e96c39ffdfa47f899f835544600a1ef5a0d263e230174504b3ba84cf0cb469545fb3682b2262040acfcfa01b5616b87b457b109301bddb624"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "client-only@0.0.1",
+      "type": "library",
+      "name": "client-only",
+      "version": "0.0.1",
+      "scope": "required",
+      "description": "This is a marker package to indicate that a module can only be used in Client Components.",
+      "purl": "pkg:npm/client-only@0.0.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/client-only"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz"
+        },
+        {
+          "type": "website",
+          "url": "https://reactjs.org/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/facebook/react/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "215dcebb48d233366b777a59e3c9cb913f4303b020d699cfcda8908695bb73745b72aab3bf3cd5bbe2fc81fa8ca7ff08336310b528aa682c6badc7eef08f2b30"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "cobe@2.0.1",
+      "type": "library",
+      "name": "cobe",
+      "version": "2.0.1",
+      "scope": "required",
+      "purl": "pkg:npm/cobe@2.0.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/cobe"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/cobe/-/cobe-2.0.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/shuding/cobe.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/shuding/cobe#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/shuding/cobe/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "69a6babdc225682f02d52179d0b0c7d009f26e8fc40179ebc6a7be6f0bebe3e614b59c9daa37818d34c3ef38820a46d1ad11929ecdc8dc5e9c66c7f75be2fe6a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "cross-env@7.0.3",
+      "type": "library",
+      "name": "cross-env",
+      "version": "7.0.3",
+      "scope": "required",
+      "author": "Kent C. Dodds",
+      "description": "Run scripts that set and use environment variables across platforms",
+      "purl": "pkg:npm/cross-env@7.0.3",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/cross-env"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/cross-env/-/cross-env-7.0.3.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/kentcdodds/cross-env.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/kentcdodds/cross-env#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/kentcdodds/cross-env/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "fbf1ca77a1207100891a1d8f4a366e522b50050ca72a8af8c2b15b460e03b40812d5a58efa0539db1a47eccf52706817498980552f5b209f04cee686c34a0d03"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "d3-array@3.2.4",
+      "type": "library",
+      "name": "d3-array",
+      "version": "3.2.4",
+      "scope": "required",
+      "author": "Mike Bostock",
+      "description": "Array manipulation, ordering, searching, summarizing, etc.",
+      "purl": "pkg:npm/d3-array@3.2.4",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/d3-array"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/d3-array/-/d3-array-3.2.4.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/d3/d3-array.git"
+        },
+        {
+          "type": "website",
+          "url": "https://d3js.org/d3-array/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/d3/d3-array/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "b5d4009b2035f22e09ef0a6ba58abc0a5731672dd20b7d5031e072c8217246dec1547751110679969ce87b998511865459efa8abc1c1be4f498e989bc8457826"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "d3-dispatch@3.0.1",
+      "type": "library",
+      "name": "d3-dispatch",
+      "version": "3.0.1",
+      "scope": "required",
+      "author": "Mike Bostock",
+      "description": "Register named callbacks and call them with arguments.",
+      "purl": "pkg:npm/d3-dispatch@3.0.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/d3-dispatch"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-3.0.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/d3/d3-dispatch.git"
+        },
+        {
+          "type": "website",
+          "url": "https://d3js.org/d3-dispatch/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/d3/d3-dispatch/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "af35323d4fd2eebc147e53322dcd444c37818f4351b8728a01cbee928cf086c86bea0e9ce5df338787368108d8d9b6747577862d67353c5d7be0fdad56f2a17e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "d3-force@3.0.0",
+      "type": "library",
+      "name": "d3-force",
+      "version": "3.0.0",
+      "scope": "required",
+      "author": "Mike Bostock",
+      "description": "Force-directed graph layout using velocity Verlet integration.",
+      "purl": "pkg:npm/d3-force@3.0.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/d3-force"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/d3-force/-/d3-force-3.0.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/d3/d3-force.git"
+        },
+        {
+          "type": "website",
+          "url": "https://d3js.org/d3-force/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/d3/d3-force/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "cf157f4ac03e538cad7bcd39d4fe040b27630ff4bea9e62d9da23202cf6d8070aa7e0ba66bf6804038e8f3903d67a10a8418ab1d12475c88095257df4f8c1d2e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "d3-geo@3.1.1",
+      "type": "library",
+      "name": "d3-geo",
+      "version": "3.1.1",
+      "scope": "required",
+      "author": "Mike Bostock",
+      "description": "Shapes and calculators for spherical coordinates.",
+      "purl": "pkg:npm/d3-geo@3.1.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/d3-geo"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/d3-geo/-/d3-geo-3.1.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/d3/d3-geo.git"
+        },
+        {
+          "type": "website",
+          "url": "https://d3js.org/d3-geo/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/d3/d3-geo/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "eb7ee59f78172973b085a943ce29d4818f372b335665129b62e6da1be7c656e73f7713bae114658ed0939dfe5e70cc84d5121db6aa6455cab421bb54d92f23d9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "d3-quadtree@3.0.1",
+      "type": "library",
+      "name": "d3-quadtree",
+      "version": "3.0.1",
+      "scope": "required",
+      "author": "Mike Bostock",
+      "description": "Two-dimensional recursive spatial subdivision.",
+      "purl": "pkg:npm/d3-quadtree@3.0.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/d3-quadtree"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/d3-quadtree/-/d3-quadtree-3.0.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/d3/d3-quadtree.git"
+        },
+        {
+          "type": "website",
+          "url": "https://d3js.org/d3-quadtree/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/d3/d3-quadtree/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "d38c43af14130d3085c0fe47ea1461b1171bf71c6fd91ce472cca01739a4488389cb73de4493fbb0d93755121b297728839eb53fda14d3fad51fabc344e02053"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "d3-timer@3.0.1",
+      "type": "library",
+      "name": "d3-timer",
+      "version": "3.0.1",
+      "scope": "required",
+      "author": "Mike Bostock",
+      "description": "An efficient queue capable of managing thousands of concurrent animations.",
+      "purl": "pkg:npm/d3-timer@3.0.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/d3-timer"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/d3-timer/-/d3-timer-3.0.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/d3/d3-timer.git"
+        },
+        {
+          "type": "website",
+          "url": "https://d3js.org/d3-timer/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/d3/d3-timer/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "9dd7c9fc9c7131dde7c37d6ec8aa18da76a2bc5fabdbd57e2dcd2cbd9c5ed49bef2119a2f2152caccbdd3b0812d68eae0479a2cfdd60790d3294f3f46a3d5550"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "detect-gpu@5.0.70",
+      "type": "library",
+      "name": "detect-gpu",
+      "version": "5.0.70",
+      "scope": "required",
+      "author": "Tim van Scherpenzeel",
+      "description": "Classify GPU's based on their benchmark score in order to provide an adaptive experience.",
+      "purl": "pkg:npm/detect-gpu@5.0.70",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/detect-gpu"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/detect-gpu/-/detect-gpu-5.0.70.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/detect-gpu.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/detect-gpu#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/detect-gpu/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "6ea7ab10fd44b1eea7b77ac59303e719bb1417d6b8abe80c9a94d554e133a02c9e09cfb2eff46f267419271d49c2181023936d8342a06adf14bbb5e906a9f3d7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "draco3d@1.5.7",
+      "type": "library",
+      "name": "draco3d",
+      "version": "1.5.7",
+      "scope": "required",
+      "author": "Google Draco Team",
+      "description": "Draco is a library for compressing and decompressing 3D geometric meshes and point clouds. It is intended to improve the storage and transmission of 3D graphics.",
+      "purl": "pkg:npm/draco3d@1.5.7",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/draco3d"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/draco3d/-/draco3d-1.5.7.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/google/draco.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/google/draco#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/google/draco/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "9ba5822adfdeac35dcc3eef42095e71bb3376b0c103c0b19bc9197e7363b6de06aa442f0e910c6918554d16e37005c727b8a436798b62dbc9cfcd346ab08d455"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "framer-motion@12.42.2",
+      "type": "library",
+      "name": "framer-motion",
+      "version": "12.42.2",
+      "scope": "required",
+      "author": "Matt Perry",
+      "description": "A simple and powerful JavaScript animation library",
+      "purl": "pkg:npm/framer-motion@12.42.2",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/framer-motion"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/framer-motion/-/framer-motion-12.42.2.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/motiondivision/motion.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/motiondivision/motion#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/motiondivision/motion/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "e5763d96e0e2bb4a077c7063a43b6114c874112fb5db6c3aa7fa5aa52241c1e3243bc4a7f8f5b641a12045b9500695859eebd94b9aaf6aba6dfe13b6a631a69f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "glsl-noise@0.0.0",
+      "type": "library",
+      "name": "glsl-noise",
+      "version": "0.0.0",
+      "scope": "required",
+      "author": "Ian McEwan, Ashima Arts, Stefan Gustavson",
+      "description": "webgl-noise shaders ported to work with glslify",
+      "purl": "pkg:npm/glsl-noise@0.0.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/glsl-noise"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/glsl-noise/-/glsl-noise-0.0.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git://github.com/hughsk/glsl-noise.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/hughsk/glsl-noise#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/hughsk/glsl-noise/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "6ff64217a6a67c051bedd24cfccc51b3b01eb5011a858cc9f0fb607eb98476dc3abb218eafe6521ad823166ea67ec064c49e1dd96ee483e365ab3aaf9f705cd3"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "gsap@3.15.0",
+      "type": "library",
+      "name": "gsap",
+      "version": "3.15.0",
+      "scope": "required",
+      "description": "GSAP is a framework-agnostic JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in **every** major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects...anything JavaScript can touch! The ScrollTrigger plugin lets you create jaw-dropping scroll-based animations with minimal code. No other library delivers such advanced sequencing, reliability, and tight control while solving real-world problems on millions of sites. GSAP works around countless browser inconsistencies; your animations **just work**. At its core, GSAP is a high-speed property manipulator, updating values over time with extreme accuracy.",
+      "purl": "pkg:npm/gsap@3.15.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/gsap"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/gsap/-/gsap-3.15.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/greensock/GSAP.git"
+        },
+        {
+          "type": "website",
+          "url": "https://gsap.com"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://gsap.com/community/"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "74c5b809605350ad401040de65cd60e31a4f188ad27fd7c917deb4a9b4d998dfd0c19216639c209624ba25697dff6e5fa53189acc46d4a31ad3a63e77e3641f8"
+        }
+      ]
+    },
+    {
+      "bom-ref": "hls.js@1.6.16",
+      "type": "library",
+      "name": "hls.js",
+      "version": "1.6.16",
+      "scope": "required",
+      "description": "JavaScript HLS client using MediaSourceExtension",
+      "purl": "pkg:npm/hls.js@1.6.16",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/hls.js"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/hls.js/-/hls.js-1.6.16.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/video-dev/hls.js.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/video-dev/hls.js"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/video-dev/hls.js/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "552211a4b7d1c250007462f8c224ee731d927118a9a3479dd4505ab56932b7cdf68c2e0245e2acb606bac888585701aef4b3818ee5fdc3399131e41d049b7310"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "ieee754@1.2.1",
+      "type": "library",
+      "name": "ieee754",
+      "version": "1.2.1",
+      "scope": "required",
+      "author": "Feross Aboukhadijeh",
+      "description": "Read/write IEEE754 floating point numbers from/to a Buffer or array-like object",
+      "purl": "pkg:npm/ieee754@1.2.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/ieee754"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/ieee754/-/ieee754-1.2.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git://github.com/feross/ieee754.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/feross/ieee754#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/feross/ieee754/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "75ccaa843bd7d42e3a95765c56a0a92be16d31141574830debf0dfe63b36ce8b94b2a1bb23ab05c62b480beeca60adbd29d5ce2c776ef732f8b059e85509ea68"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "immediate@3.0.6",
+      "type": "library",
+      "name": "immediate",
+      "version": "3.0.6",
+      "scope": "required",
+      "description": "A cross browser microtask library",
+      "purl": "pkg:npm/immediate@3.0.6",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/immediate"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/immediate/-/immediate-3.0.6.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git://github.com/calvinmetcalf/immediate.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/calvinmetcalf/immediate#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/calvinmetcalf/immediate/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "5d7385b72a838cd0c043155f631b85ee0f4897f21b5a69a5420d8c60a387f04c484f5aa0eb1738cf24b71da10401382cd5bb5fcf1ab5e5c894898ee08d25d119"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "internmap@2.0.3",
+      "type": "library",
+      "name": "internmap",
+      "version": "2.0.3",
+      "scope": "required",
+      "author": "Mike Bostock",
+      "description": "Map and Set with automatic key interning",
+      "purl": "pkg:npm/internmap@2.0.3",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/internmap"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/internmap/-/internmap-2.0.3.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/mbostock/internmap.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/mbostock/internmap/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/mbostock/internmap/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "e4787b635c106ef639a281a03db0da2f98982c03f331352b8ccba5b241cb1fac27bff03ed6ae6b8046a2baa12307ea3119721566cd4517e47f28f37765241862"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "is-promise@2.2.2",
+      "type": "library",
+      "name": "is-promise",
+      "version": "2.2.2",
+      "scope": "required",
+      "author": "ForbesLindesay",
+      "description": "Test whether an object looks like a promises-a+ promise",
+      "purl": "pkg:npm/is-promise@2.2.2",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/is-promise"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/is-promise/-/is-promise-2.2.2.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/then/is-promise.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/then/is-promise#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/then/is-promise/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "fa53f8ffa94a5017d08d9da97714e166f2d401a7e665bf0e03115bf175ed890992df920d82bf3985d386a04b35db87b3d450a7649b7a8dabbf4fe6a5879f1015"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "its-fine@2.0.0",
+      "type": "library",
+      "name": "its-fine",
+      "version": "2.0.0",
+      "scope": "required",
+      "author": "Cody Bennett",
+      "description": "A collection of escape hatches for React.",
+      "purl": "pkg:npm/its-fine@2.0.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/its-fine"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/its-fine/-/its-fine-2.0.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/its-fine.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/its-fine"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/its-fine/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "28b5620a65b1f78ccebe92f04a5b31eb238278c85961ac6b255f3b3e8e64fc5a19cdc3d26a1bcae6a27b7d8852eb5b198b98a49a1d92dc7cf9e40da5dd4ebd9e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "lenis@1.3.25",
+      "type": "library",
+      "name": "lenis",
+      "version": "1.3.25",
+      "scope": "required",
+      "author": "darkroom.engineering",
+      "description": "How smooth scroll should be",
+      "purl": "pkg:npm/lenis@1.3.25",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/lenis"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/lenis/-/lenis-1.3.25.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/darkroomengineering/lenis.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/darkroomengineering/lenis"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/darkroomengineering/lenis/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "98e2b16b212b95a38d2bc7e6e0b3775cd77df50bb8a654e99fd87da9ff30c738c6ac90f3b83f38158cd9f351c277a66c5a9fbe5565703b32f6f3a3dfdacdaee0"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "lie@3.3.0",
+      "type": "library",
+      "name": "lie",
+      "version": "3.3.0",
+      "scope": "required",
+      "description": "A basic but performant promise implementation",
+      "purl": "pkg:npm/lie@3.3.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/lie"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/lie/-/lie-3.3.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/calvinmetcalf/lie.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/calvinmetcalf/lie#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/calvinmetcalf/lie/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "51a88c27379646512e8f302ec392e8918d4be5e70d41864a7e6c99f4bef00c76ffa797ad29ac5786884172bc341186f2f86fcd039daf452378377f5dc47008c1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "maath@0.10.8",
+      "type": "library",
+      "name": "maath",
+      "version": "0.10.8",
+      "scope": "required",
+      "purl": "pkg:npm/maath@0.10.8",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/maath"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/maath/-/maath-0.10.8.tgz"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "b51bdb0c5d0f82acfef5751ae238df80043cfda3ca9907565e2945bb6b4ccb81968f834eb31f7d1e550b3b821e4447db3b76b4b00d78e43658caf5cf9326e6d2"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "meshline@3.3.1",
+      "type": "library",
+      "name": "meshline",
+      "version": "3.3.1",
+      "scope": "required",
+      "author": "Jaume Sanchez",
+      "purl": "pkg:npm/meshline@3.3.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/meshline"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/meshline/-/meshline-3.3.1.tgz"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/meshline#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/meshline/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "fd3423f8975991e4943a5e4c93627b78b7184cb8909b6203ce6952bd89bba2fd796a711c0c9f76187aaa6b3c534ab79e3607e762edb892212fbefd1695b09d15"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "motion-dom@12.42.2",
+      "type": "library",
+      "name": "motion-dom",
+      "version": "12.42.2",
+      "scope": "required",
+      "author": "Matt Perry",
+      "purl": "pkg:npm/motion-dom@12.42.2",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/motion-dom"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/motion-dom/-/motion-dom-12.42.2.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/motiondivision/motion.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/motiondivision/motion#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/motiondivision/motion/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "e6020c58ba7f3f2701b49449591823c647b99fc765be44a7d83ad85beb6bdd772a019635c5987a049ca8a095c233cc1d7ccef07cc8e404934b81ed4228f50844"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "motion-utils@12.39.0",
+      "type": "library",
+      "name": "motion-utils",
+      "version": "12.39.0",
+      "scope": "required",
+      "author": "Matt Perry",
+      "purl": "pkg:npm/motion-utils@12.39.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/motion-utils"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/motion-utils/-/motion-utils-12.39.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/motiondivision/motion.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/motiondivision/motion#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/motiondivision/motion/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "f2769d2402634eda91926445dfa168253af2c0af679c59a73f09d2332c5a38253b1838cdf514cc248c71f437bc12b33ebe93e131c72bffa7e8e56722c902e731"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "n8ao@1.10.3",
+      "type": "library",
+      "name": "n8ao",
+      "version": "1.10.3",
+      "scope": "required",
+      "description": "An efficient and visually pleasing implementation of SSAO with an emphasis on temporal stability and artist control.",
+      "purl": "pkg:npm/n8ao@1.10.3",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/n8ao"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/n8ao/-/n8ao-1.10.3.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/N8python/n8ao.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/N8python/n8ao#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/N8python/n8ao/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "245464e1681401458ed8a7494ea9814f4d9d3fd906eeb136a106c1cbae04f7e63043777de8a07d4016a7a8dcbf3676147d44d853a67fe4e4b9b7fc8b7b2efee9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "next@16.2.12",
+      "type": "library",
+      "name": "next",
+      "version": "16.2.12",
+      "scope": "required",
+      "description": "The React Framework",
+      "purl": "pkg:npm/next@16.2.12",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/next"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/next/-/next-16.2.12.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/vercel/next.js.git"
+        },
+        {
+          "type": "website",
+          "url": "https://nextjs.org"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/vercel/next.js/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "883e7d79841699b15c11b5fbbff69c1b90d1ca6f62c350dd68fa03d164c0f76d27696b04db9c12873256e3e52f02cf0c2bd102da405f207eafb6da351f53c71b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "postcss@8.4.31",
+      "type": "library",
+      "name": "postcss",
+      "version": "8.4.31",
+      "scope": "required",
+      "author": "Andrey Sitnik",
+      "description": "Tool for transforming styles with JS plugins",
+      "purl": "pkg:npm/postcss@8.4.31",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/next/node_modules/postcss"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/postcss/-/postcss-8.4.31.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/postcss/postcss.git"
+        },
+        {
+          "type": "website",
+          "url": "https://postcss.org/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/postcss/postcss/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "3d2d3c21ba226bd9adb3fdb2815dde2e96398219d471f2d5fc45d3396d44daa63124a186054b4d8cdefa1581e732cdfa4660119f8d5b0b40199a7fab474395a5"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "ogl@1.0.11",
+      "type": "library",
+      "name": "ogl",
+      "version": "1.0.11",
+      "scope": "required",
+      "author": "Nathan Gordon",
+      "description": "WebGL Library",
+      "purl": "pkg:npm/ogl@1.0.11",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/ogl"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/ogl/-/ogl-1.0.11.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://gordonnl@github.com/oframe/ogl.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/oframe/ogl#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/oframe/ogl/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "914a42d79e0015fc62d7aa666542b88e4dc9fbccf1c135863e8d37128600f103dbce2907a1a0bcda7ea93536ddfa811a2689da13c68f581957eda77dceba8bb0"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "postprocessing@6.39.2",
+      "type": "library",
+      "name": "postprocessing",
+      "version": "6.39.2",
+      "scope": "required",
+      "author": "Raoul van Rüschen",
+      "description": "A post processing library for three.js.",
+      "purl": "pkg:npm/postprocessing@6.39.2",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/postprocessing"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/postprocessing/-/postprocessing-6.39.2.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/postprocessing.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/postprocessing"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/postprocessing/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "0313d8fb117254eb33fbc6db1d2c9006838ae0052a490b294d75c8b0d70a866189466fda7c7440c19f1b282d3601e48f208d0f5ba95b08df384a0028585b0a28"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "potpack@1.0.2",
+      "type": "library",
+      "name": "potpack",
+      "version": "1.0.2",
+      "scope": "required",
+      "author": "Vladimir Agafonkin",
+      "description": "A tiny library for packing 2D rectangles (for sprite layouts)",
+      "purl": "pkg:npm/potpack@1.0.2",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/potpack"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/potpack/-/potpack-1.0.2.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/mapbox/potpack.git"
+        },
+        {
+          "type": "website",
+          "url": "https://mapbox.github.io/potpack/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/mapbox/potpack/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "721a1cb5104857d10c4fd5860191e7dd5eedd19da9310ca5d04644ea915cffa9a5decb30ec395ffe800ebc5c239b51d5b2a7d037c19f785c89f9df2d473aae79"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "promise-worker-transferable@1.0.4",
+      "type": "library",
+      "name": "promise-worker-transferable",
+      "version": "1.0.4",
+      "scope": "required",
+      "author": "Roman Viskin",
+      "description": "Communicate with a Web Worker using Promises, allowing transferList",
+      "purl": "pkg:npm/promise-worker-transferable@1.0.4",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/promise-worker-transferable"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/promise-worker-transferable/-/promise-worker-transferable-1.0.4.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/terikon/promise-worker-transferable.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/terikon/promise-worker-transferable#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/terikon/promise-worker-transferable/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "6cdfb47a1127ad77f1576650bd4d8f7ad3b49f882a043e2e96adcc23558e3cb82beff320f72450917e7ed2fd6f6a0afbe194ec97b5edce56980e8d84b8279827"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "react@19.2.4",
+      "type": "library",
+      "name": "react",
+      "version": "19.2.4",
+      "scope": "required",
+      "description": "React is a JavaScript library for building user interfaces.",
+      "purl": "pkg:npm/react@19.2.4",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/react"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/react/-/react-19.2.4.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/facebook/react.git"
+        },
+        {
+          "type": "website",
+          "url": "https://react.dev/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/facebook/react/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "f677e9da16290b03a300dfbc4d914686d584c20bd61d7a84487f2a4fcf404ff956925a4b38ddb62dcf2912d9e9b19cfb5666b069b494d200a39e3f1a0b47ae1d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "react-dom@19.2.4",
+      "type": "library",
+      "name": "react-dom",
+      "version": "19.2.4",
+      "scope": "required",
+      "description": "React package for working with the DOM.",
+      "purl": "pkg:npm/react-dom@19.2.4",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/react-dom"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/react-dom/-/react-dom-19.2.4.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/facebook/react.git"
+        },
+        {
+          "type": "website",
+          "url": "https://react.dev/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/facebook/react/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "01725d2e8f2480c6e2998f793b668a42ab33da25a2f63320289851040c44084e081717dc6b30762e6ce5a08a226c92370b5d88958db4f8a15a2effbbd5b50979"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "react-use-measure@2.1.7",
+      "type": "library",
+      "name": "react-use-measure",
+      "version": "2.1.7",
+      "scope": "required",
+      "author": "Paul Henschel",
+      "description": "Utility to measure view bounds",
+      "purl": "pkg:npm/react-use-measure@2.1.7",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/react-use-measure"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/react-use-measure/-/react-use-measure-2.1.7.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/react-use-measure.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/react-use-measure"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/react-use-measure/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "2abbdc028d7723feb41e9c063b98e95bb13d0dfbac2b22cf2efb87954c8fe73aa79803e135ceaa4d18d442b7530039749693e90d5536fc6839d5494e1875db76"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "require-from-string@2.0.2",
+      "type": "library",
+      "name": "require-from-string",
+      "version": "2.0.2",
+      "scope": "required",
+      "author": "Vsevolod Strukchinsky",
+      "description": "Require module from string",
+      "purl": "pkg:npm/require-from-string@2.0.2",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/require-from-string"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/floatdrop/require-from-string.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/floatdrop/require-from-string#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/floatdrop/require-from-string/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "5dfd2759ee91b1ece214cbbe029f5b8a251b9a996ae92f7fa7eef0ed85cffc904786b5030d48706bebc0372b9bbaa7d9593bde53ffc36151ac0c6ed128bfef13"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "scheduler@0.27.0",
+      "type": "library",
+      "name": "scheduler",
+      "version": "0.27.0",
+      "scope": "required",
+      "description": "Cooperative scheduler for the browser environment.",
+      "purl": "pkg:npm/scheduler@0.27.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/scheduler"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/scheduler/-/scheduler-0.27.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/facebook/react.git"
+        },
+        {
+          "type": "website",
+          "url": "https://react.dev/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/facebook/react/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "78dbfe5ab55b2aed5fdef6d8253ff1b62179b320391cf20cb5ff48818fe72a0d2c5aacc0504bea63fc66ece71973fa9a7cbc7f88ef4580e99e480a78bf9b62fd"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "sharp@0.34.5",
+      "type": "library",
+      "name": "sharp",
+      "version": "0.34.5",
+      "scope": "optional",
+      "author": "Lovell Fuller",
+      "description": "High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, GIF, AVIF and TIFF images",
+      "purl": "pkg:npm/sharp@0.34.5",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/sharp"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/sharp/-/sharp-0.34.5.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git://github.com/lovell/sharp.git"
+        },
+        {
+          "type": "website",
+          "url": "https://sharp.pixelplumbing.com"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/lovell/sharp/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "3aef48e45b7d58d7026d7ad4f5c3203c17022bc2e2c0ba9c6f2c16dede280d5dfb9f5a73a6e34bb1888057c78e0e78dbb509520f067671411e433e04e781e5b6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "semver@7.8.5",
+      "type": "library",
+      "name": "semver",
+      "version": "7.8.5",
+      "scope": "optional",
+      "author": "GitHub Inc.",
+      "description": "The semantic version parser used by npm.",
+      "purl": "pkg:npm/semver@7.8.5",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/sharp/node_modules/semver"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/semver/-/semver-7.8.5.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/npm/node-semver.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/npm/node-semver#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/npm/node-semver/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "63bfca0ec6fc2e3a28669c1aa86cae94ee8342592c8029dc7211c693eb19218e1206f52870c044147e54af57c8e1d57e26f974c3a723bee71a222e34a6e462a0"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "stats-gl@2.4.2",
+      "type": "library",
+      "name": "stats-gl",
+      "version": "2.4.2",
+      "scope": "required",
+      "author": "Renaud ROHLINGER",
+      "purl": "pkg:npm/stats-gl@2.4.2",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/stats-gl"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/stats-gl/-/stats-gl-2.4.2.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/RenaudRohlinger/stats-gl.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/RenaudRohlinger/stats-gl"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/RenaudRohlinger/stats-gl/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "8393bd074866f42be7337ebebfb485977f53ee198096fe78d6d53cd4c13c61e49bde2d4220fe7f41d0de481dc0d256b46ca347a71a70c4e551a36c054d8128b1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "three@0.170.0",
+      "type": "library",
+      "name": "three",
+      "version": "0.170.0",
+      "scope": "required",
+      "author": "mrdoob",
+      "description": "JavaScript 3D library",
+      "purl": "pkg:npm/three@0.170.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/stats-gl/node_modules/three"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/three/-/three-0.170.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/mrdoob/three.js.git"
+        },
+        {
+          "type": "website",
+          "url": "https://threejs.org/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/mrdoob/three.js/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "1502be2c4a587347c10fe27c83aa12132c8dce3a7e43b2acd42e7af1659aa0c44b5be4e434d5a67a759e1a0263575d3919dfa9ff6aa5d5972362f3623d9061b9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "stats.js@0.17.0",
+      "type": "library",
+      "name": "stats.js",
+      "version": "0.17.0",
+      "scope": "required",
+      "author": "mrdoob",
+      "description": "JavaScript Performance Monitor",
+      "purl": "pkg:npm/stats.js@0.17.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/stats.js"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/stats.js/-/stats.js-0.17.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/mrdoob/stats.js.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/mrdoob/stats.js"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/mrdoob/stats.js/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "84d2b3f2986f60b3c471191e1b5aec1a65790a132328301653bfce24974312b3c13428505f10a8dd666eac6a6759cea066103310f15a775695832380347d6c33"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "styled-jsx@5.1.6",
+      "type": "library",
+      "name": "styled-jsx",
+      "version": "5.1.6",
+      "scope": "required",
+      "description": "Full CSS support for JSX without compromises",
+      "purl": "pkg:npm/styled-jsx@5.1.6",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/styled-jsx"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.6.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/vercel/styled-jsx.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/vercel/styled-jsx#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/vercel/styled-jsx/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "a925720d378ca2d76f418a0758b346c111491c2fa2f99bdd051628b0e1600be5a0d6fc787eb376fd11bf340ed262aaaf28d2dfdfd3f62d2440da9bba9f45d864"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "suspend-react@0.1.3",
+      "type": "library",
+      "name": "suspend-react",
+      "version": "0.1.3",
+      "scope": "required",
+      "author": "Paul Henschel",
+      "description": "Integrate React Suspense into your apps",
+      "purl": "pkg:npm/suspend-react@0.1.3",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/suspend-react"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/suspend-react/-/suspend-react-0.1.3.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/suspend-react.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/suspend-react#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/suspend-react/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "6aa95d2a05fd699aa9a03a777bcfc167c0e6ef1d69265faa23764ac433748bf2104d6530071fcc6a79a5549df0a30a9b9e8e9cd9b9a221fb3e526e8b6ec8c9c9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "three@0.185.1",
+      "type": "library",
+      "name": "three",
+      "version": "0.185.1",
+      "scope": "required",
+      "author": "mrdoob",
+      "description": "JavaScript 3D library",
+      "purl": "pkg:npm/three@0.185.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/three"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/three/-/three-0.185.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/mrdoob/three.js.git"
+        },
+        {
+          "type": "website",
+          "url": "https://threejs.org/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/mrdoob/three.js/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "e5aa231425cac278c1459bd49eddd615f11cbd426090de4b9628d114df7984ccbc595906e08d1035c244f8eb96bee2746ce752b6b6df5e7d2991debf43288096"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "three-mesh-bvh@0.8.3",
+      "type": "library",
+      "name": "three-mesh-bvh",
+      "version": "0.8.3",
+      "scope": "required",
+      "author": "Garrett Johnson",
+      "description": "A BVH implementation to speed up raycasting against three.js meshes.",
+      "purl": "pkg:npm/three-mesh-bvh@0.8.3",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/three-mesh-bvh"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/three-mesh-bvh/-/three-mesh-bvh-0.8.3.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/gkjohnson/three-mesh-bvh.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/gkjohnson/three-mesh-bvh#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/gkjohnson/three-mesh-bvh/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "e06e6505a17e8366ae297dcfd32ab1f8c242ea856deac07993e09c852e8e6f4aaf1f460886e524d5e62bee4b6c22963e6a56c2a84f34fc5550195d7dd0f9a202"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "three-stdlib@2.36.1",
+      "type": "library",
+      "name": "three-stdlib",
+      "version": "2.36.1",
+      "scope": "required",
+      "author": "Paul Henschel",
+      "description": "stand-alone library of threejs examples",
+      "purl": "pkg:npm/three-stdlib@2.36.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/three-stdlib"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/three-stdlib/-/three-stdlib-2.36.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/three-stdlib.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/three-stdlib"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/three-stdlib/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "5f2190ac598d4393bf2282a6e79e9fb702ac060d754c86f7d35301e5d58d89cce240112cda0de0b4e6087fba4588b6b4cc8da053086d0a3bfd7e68e7c4a6750a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "fflate@0.6.10",
+      "type": "library",
+      "name": "fflate",
+      "version": "0.6.10",
+      "scope": "required",
+      "author": "Arjun Barrett",
+      "description": "High performance (de)compression in an 8kB package",
+      "purl": "pkg:npm/fflate@0.6.10",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/three-stdlib/node_modules/fflate"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/fflate/-/fflate-0.6.10.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/101arrowz/fflate.git"
+        },
+        {
+          "type": "website",
+          "url": "https://101arrowz.github.io/fflate"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/101arrowz/fflate/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "210ae1de510f33ddf054211ccdcf526803af926728427fc6f01a357bc64f958dd7ddb9c0c5668176f4ddbccd613fada2669d015d60f2e2f4c0cb87c5d3e0e5a6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "troika-three-text@0.52.4",
+      "type": "library",
+      "name": "troika-three-text",
+      "version": "0.52.4",
+      "scope": "required",
+      "author": "Jason Johnston",
+      "description": "SDF-based text rendering for Three.js",
+      "purl": "pkg:npm/troika-three-text@0.52.4",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/troika-three-text"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/troika-three-text/-/troika-three-text-0.52.4.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/protectwise/troika.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/protectwise/troika#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/protectwise/troika/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "579d04c1c606aee579ad467d17868db2bcad19d29c5ca00b8c4b505c83817e1568654f5502a64d228190dd3322a2856a1406d1d70d794fe7fef20933a05cdac2"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "troika-three-utils@0.52.4",
+      "type": "library",
+      "name": "troika-three-utils",
+      "version": "0.52.4",
+      "scope": "required",
+      "author": "Jason Johnston",
+      "description": "Various utilities related to Three.js",
+      "purl": "pkg:npm/troika-three-utils@0.52.4",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/troika-three-utils"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/troika-three-utils/-/troika-three-utils-0.52.4.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/protectwise/troika.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/protectwise/troika#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/protectwise/troika/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "34e4404ad4956bf043886e7631fb9d9388f5146e230b820bbad0777e83e77c66ce788b3df86e6f64b6b4a679a769fb595069b85304a8a84a5676abc2ef39acdc"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "troika-worker-utils@0.52.0",
+      "type": "library",
+      "name": "troika-worker-utils",
+      "version": "0.52.0",
+      "scope": "required",
+      "author": "Jason Johnston",
+      "description": "Utilities for executing code in Web Workers",
+      "purl": "pkg:npm/troika-worker-utils@0.52.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/troika-worker-utils"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/troika-worker-utils/-/troika-worker-utils-0.52.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/protectwise/troika.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/protectwise/troika#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/protectwise/troika/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "5b50a9bd31f291a3c7e5baefe551cb7d0a3d0f5398ba8d1c481114405153fe7054cccf220fa2eadbfb601bf7f539e95b012d56b5a4cf433139b8ce3d7a09e783"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "tunnel-rat@0.1.2",
+      "type": "library",
+      "name": "tunnel-rat",
+      "version": "0.1.2",
+      "scope": "required",
+      "author": "Paul Henschel",
+      "description": "non gratum anus rodentum",
+      "purl": "pkg:npm/tunnel-rat@0.1.2",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/tunnel-rat"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/tunnel-rat/-/tunnel-rat-0.1.2.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/tunnel-rat.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/tunnel-rat#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/tunnel-rat/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "951e551e690f873761accd3dda52369c00ac2cee10b9b174ff2a0e8735fb73ec08a5b3751a31cdcc273dd50969c418be727c7cbd527e52beaf2f9704a103c5a5"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "zustand@4.5.7",
+      "type": "library",
+      "name": "zustand",
+      "version": "4.5.7",
+      "scope": "required",
+      "author": "Paul Henschel",
+      "description": "🐻 Bear necessities for state management in React",
+      "purl": "pkg:npm/zustand@4.5.7",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/tunnel-rat/node_modules/zustand"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/zustand/-/zustand-4.5.7.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/zustand.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/zustand"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/zustand/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "087394cbb9aede56c3ea8e8b24b7e59698e4ce11d7481957f01f7ea8f75d52c21f785e52fd4679ab49260ac9d1a93d541c54197213450c3ccc6d0b2e7ac1d697"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "use-sync-external-store@1.6.0",
+      "type": "library",
+      "name": "use-sync-external-store",
+      "version": "1.6.0",
+      "scope": "required",
+      "description": "Backwards compatible shim for React's useSyncExternalStore. Works with any React that supports hooks.",
+      "purl": "pkg:npm/use-sync-external-store@1.6.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/use-sync-external-store"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.6.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/facebook/react.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/facebook/react#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/facebook/react/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "3e9e864b018ffcdacf22bc551402243907b2c3c9457a73878a34169144eb0efac5e002eaca53f60bf28291e4bd76950cdcabd84508676b9bedec82fde7e650f7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "utility-types@3.11.0",
+      "type": "library",
+      "name": "utility-types",
+      "version": "3.11.0",
+      "scope": "required",
+      "author": "Piotr Witek",
+      "description": "Utility Types Collection for TypeScript",
+      "purl": "pkg:npm/utility-types@3.11.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/utility-types"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/utility-types/-/utility-types-3.11.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/piotrwitek/utility-types.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/piotrwitek/utility-types"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/piotrwitek/utility-types/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "e99ecc6b66951168ac68be93bc10b2ecff2b9b62d0a0fbfa749ede7086888b11dcc1f6c9d31ee659d6dcc2520ce48190c4f6521587aa442aa538e78aa0960c93"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "webgl-constants@1.1.1",
+      "type": "library",
+      "name": "webgl-constants",
+      "version": "1.1.1",
+      "scope": "required",
+      "author": "Tim van Scherpenzeel",
+      "description": "Complete set of constants as specified in the WebGL, WebGL2 and extension spec.",
+      "purl": "pkg:npm/webgl-constants@1.1.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/webgl-constants"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/webgl-constants/-/webgl-constants-1.1.1.tgz"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "2e40572a3539afdbc05bb19cbb74f9bbee5cbd2be1e56c0835daf40bef63a73541e357234003f978f02b0ed93f58761d563d0679f0a033bdc103b16522236d76"
+        }
+      ]
+    },
+    {
+      "bom-ref": "webgl-sdf-generator@1.1.1",
+      "type": "library",
+      "name": "webgl-sdf-generator",
+      "version": "1.1.1",
+      "scope": "required",
+      "author": "Jason Johnston",
+      "description": "WebGL-accelerated signed distance field generation for 2D paths",
+      "purl": "pkg:npm/webgl-sdf-generator@1.1.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/webgl-sdf-generator"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/webgl-sdf-generator/-/webgl-sdf-generator-1.1.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/lojjic/webgl-sdf-generator.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/lojjic/webgl-sdf-generator#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/lojjic/webgl-sdf-generator/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "f59d0970c4c5c5e13e6f6c752c94dd9da4fcad3f1a129ecc57190dc28c9c366256c0f773a17ccc87406325287f00414ff8a3d8654962f35e21f1b2591486768c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "zustand@5.0.14",
+      "type": "library",
+      "name": "zustand",
+      "version": "5.0.14",
+      "scope": "required",
+      "author": "Paul Henschel",
+      "description": "🐻 Bear necessities for state management in React",
+      "purl": "pkg:npm/zustand@5.0.14",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/zustand"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/zustand/-/zustand-5.0.14.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/zustand.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/zustand"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/zustand/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "ffcb40b293392cc3ebdbc6f77f02d8aed763efb102a5f66f89a3fbe423139f03bc212c9a138183206ffdac30d8abf707f43d97c360364578252c89e6541401fe"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "aaron@0.1.0",
+      "dependsOn": [
+        "@gsap/react@2.1.2",
+        "@phosphor-icons/react@2.1.10",
+        "@react-three/drei@10.7.7",
+        "@react-three/fiber@9.6.1",
+        "@react-three/postprocessing@3.0.4",
+        "cobe@2.0.1",
+        "d3-force@3.0.0",
+        "d3-geo@3.1.1",
+        "framer-motion@12.42.2",
+        "gsap@3.15.0",
+        "lenis@1.3.25",
+        "next@16.2.12",
+        "ogl@1.0.11",
+        "react@19.2.4",
+        "react-dom@19.2.4",
+        "three@0.185.1"
+      ]
+    },
+    {
+      "ref": "@babel/runtime@7.29.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "@emnapi/core@1.10.0",
+      "dependsOn": [
+        "@emnapi/wasi-threads@1.2.1"
+      ]
+    },
+    {
+      "ref": "@emnapi/runtime@1.11.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "@emnapi/wasi-threads@1.2.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "@gsap/react@2.1.2",
+      "dependsOn": [
+        "gsap@3.15.0",
+        "react@19.2.4"
+      ]
+    },
+    {
+      "ref": "@img/colour@1.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "@img/sharp-win32-x64@0.34.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "@mediapipe/tasks-vision@0.10.17",
+      "dependsOn": []
+    },
+    {
+      "ref": "@monogrid/gainmap-js@3.4.0",
+      "dependsOn": [
+        "three@0.185.1",
+        "promise-worker-transferable@1.0.4"
+      ]
+    },
+    {
+      "ref": "@napi-rs/wasm-runtime@1.1.6",
+      "dependsOn": [
+        "@emnapi/core@1.10.0",
+        "@emnapi/runtime@1.11.2",
+        "@tybys/wasm-util@0.10.3"
+      ]
+    },
+    {
+      "ref": "@next/env@16.2.12",
+      "dependsOn": []
+    },
+    {
+      "ref": "@next/swc-win32-x64-msvc@16.2.12",
+      "dependsOn": []
+    },
+    {
+      "ref": "@phosphor-icons/react@2.1.10",
+      "dependsOn": [
+        "react@19.2.4",
+        "react-dom@19.2.4"
+      ]
+    },
+    {
+      "ref": "@react-three/drei@10.7.7",
+      "dependsOn": [
+        "@react-three/fiber@9.6.1",
+        "react@19.2.4",
+        "three@0.185.1",
+        "react-dom@19.2.4",
+        "@babel/runtime@7.29.7",
+        "@mediapipe/tasks-vision@0.10.17",
+        "@monogrid/gainmap-js@3.4.0",
+        "@use-gesture/react@10.3.1",
+        "camera-controls@3.1.2",
+        "cross-env@7.0.3",
+        "detect-gpu@5.0.70",
+        "glsl-noise@0.0.0",
+        "hls.js@1.6.16",
+        "maath@0.10.8",
+        "meshline@3.3.1",
+        "stats-gl@2.4.2",
+        "stats.js@0.17.0",
+        "suspend-react@0.1.3",
+        "three-mesh-bvh@0.8.3",
+        "three-stdlib@2.36.1",
+        "troika-three-text@0.52.4",
+        "tunnel-rat@0.1.2",
+        "use-sync-external-store@1.6.0",
+        "utility-types@3.11.0",
+        "zustand@5.0.14"
+      ]
+    },
+    {
+      "ref": "@react-three/fiber@9.6.1",
+      "dependsOn": [
+        "react@19.2.4",
+        "three@0.185.1",
+        "react-dom@19.2.4",
+        "@babel/runtime@7.29.7",
+        "base64-js@1.5.1",
+        "buffer@6.0.3",
+        "its-fine@2.0.0",
+        "react-use-measure@2.1.7",
+        "scheduler@0.27.0",
+        "suspend-react@0.1.3",
+        "use-sync-external-store@1.6.0",
+        "zustand@5.0.14"
+      ]
+    },
+    {
+      "ref": "@react-three/postprocessing@3.0.4",
+      "dependsOn": [
+        "@react-three/fiber@9.6.1",
+        "react@19.2.4",
+        "three@0.185.1",
+        "maath@0.6.0",
+        "n8ao@1.10.3",
+        "postprocessing@6.39.2"
+      ]
+    },
+    {
+      "ref": "maath@0.6.0",
+      "dependsOn": [
+        "three@0.185.1"
+      ]
+    },
+    {
+      "ref": "@swc/helpers@0.5.15",
+      "dependsOn": []
+    },
+    {
+      "ref": "@tybys/wasm-util@0.10.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "@types/draco3d@1.4.10",
+      "dependsOn": []
+    },
+    {
+      "ref": "@types/offscreencanvas@2019.7.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "@types/react-reconciler@0.28.9",
+      "dependsOn": []
+    },
+    {
+      "ref": "@use-gesture/core@10.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "@use-gesture/react@10.3.1",
+      "dependsOn": [
+        "react@19.2.4",
+        "@use-gesture/core@10.3.1"
+      ]
+    },
+    {
+      "ref": "base64-js@1.5.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "bidi-js@1.0.3",
+      "dependsOn": [
+        "require-from-string@2.0.2"
+      ]
+    },
+    {
+      "ref": "buffer@6.0.3",
+      "dependsOn": [
+        "base64-js@1.5.1",
+        "ieee754@1.2.1"
+      ]
+    },
+    {
+      "ref": "camera-controls@3.1.2",
+      "dependsOn": [
+        "three@0.185.1"
+      ]
+    },
+    {
+      "ref": "client-only@0.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "cobe@2.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "cross-env@7.0.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "d3-array@3.2.4",
+      "dependsOn": [
+        "internmap@2.0.3"
+      ]
+    },
+    {
+      "ref": "d3-dispatch@3.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "d3-force@3.0.0",
+      "dependsOn": [
+        "d3-dispatch@3.0.1",
+        "d3-quadtree@3.0.1",
+        "d3-timer@3.0.1"
+      ]
+    },
+    {
+      "ref": "d3-geo@3.1.1",
+      "dependsOn": [
+        "d3-array@3.2.4"
+      ]
+    },
+    {
+      "ref": "d3-quadtree@3.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "d3-timer@3.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "detect-gpu@5.0.70",
+      "dependsOn": [
+        "webgl-constants@1.1.1"
+      ]
+    },
+    {
+      "ref": "draco3d@1.5.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "framer-motion@12.42.2",
+      "dependsOn": [
+        "react@19.2.4",
+        "react-dom@19.2.4",
+        "motion-dom@12.42.2",
+        "motion-utils@12.39.0"
+      ]
+    },
+    {
+      "ref": "glsl-noise@0.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "gsap@3.15.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "hls.js@1.6.16",
+      "dependsOn": []
+    },
+    {
+      "ref": "ieee754@1.2.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "immediate@3.0.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "internmap@2.0.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "is-promise@2.2.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "its-fine@2.0.0",
+      "dependsOn": [
+        "react@19.2.4",
+        "@types/react-reconciler@0.28.9"
+      ]
+    },
+    {
+      "ref": "lenis@1.3.25",
+      "dependsOn": [
+        "react@19.2.4"
+      ]
+    },
+    {
+      "ref": "lie@3.3.0",
+      "dependsOn": [
+        "immediate@3.0.6"
+      ]
+    },
+    {
+      "ref": "maath@0.10.8",
+      "dependsOn": [
+        "three@0.185.1"
+      ]
+    },
+    {
+      "ref": "meshline@3.3.1",
+      "dependsOn": [
+        "three@0.185.1"
+      ]
+    },
+    {
+      "ref": "motion-dom@12.42.2",
+      "dependsOn": [
+        "motion-utils@12.39.0"
+      ]
+    },
+    {
+      "ref": "motion-utils@12.39.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "n8ao@1.10.3",
+      "dependsOn": [
+        "postprocessing@6.39.2",
+        "three@0.185.1"
+      ]
+    },
+    {
+      "ref": "next@16.2.12",
+      "dependsOn": [
+        "react@19.2.4",
+        "react-dom@19.2.4",
+        "@next/env@16.2.12",
+        "@swc/helpers@0.5.15",
+        "postcss@8.4.31",
+        "styled-jsx@5.1.6",
+        "sharp@0.34.5",
+        "@next/swc-win32-x64-msvc@16.2.12"
+      ]
+    },
+    {
+      "ref": "postcss@8.4.31",
+      "dependsOn": []
+    },
+    {
+      "ref": "ogl@1.0.11",
+      "dependsOn": []
+    },
+    {
+      "ref": "postprocessing@6.39.2",
+      "dependsOn": [
+        "three@0.185.1"
+      ]
+    },
+    {
+      "ref": "potpack@1.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "promise-worker-transferable@1.0.4",
+      "dependsOn": [
+        "is-promise@2.2.2",
+        "lie@3.3.0"
+      ]
+    },
+    {
+      "ref": "react@19.2.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "react-dom@19.2.4",
+      "dependsOn": [
+        "react@19.2.4",
+        "scheduler@0.27.0"
+      ]
+    },
+    {
+      "ref": "react-use-measure@2.1.7",
+      "dependsOn": [
+        "react@19.2.4",
+        "react-dom@19.2.4"
+      ]
+    },
+    {
+      "ref": "require-from-string@2.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "scheduler@0.27.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "sharp@0.34.5",
+      "dependsOn": [
+        "@img/colour@1.1.0",
+        "semver@7.8.5",
+        "@img/sharp-win32-x64@0.34.5"
+      ]
+    },
+    {
+      "ref": "semver@7.8.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "stats-gl@2.4.2",
+      "dependsOn": [
+        "three@0.170.0"
+      ]
+    },
+    {
+      "ref": "three@0.170.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "stats.js@0.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "styled-jsx@5.1.6",
+      "dependsOn": [
+        "react@19.2.4",
+        "client-only@0.0.1"
+      ]
+    },
+    {
+      "ref": "suspend-react@0.1.3",
+      "dependsOn": [
+        "react@19.2.4"
+      ]
+    },
+    {
+      "ref": "three@0.185.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "three-mesh-bvh@0.8.3",
+      "dependsOn": [
+        "three@0.185.1"
+      ]
+    },
+    {
+      "ref": "three-stdlib@2.36.1",
+      "dependsOn": [
+        "three@0.185.1",
+        "@types/draco3d@1.4.10",
+        "@types/offscreencanvas@2019.7.3",
+        "draco3d@1.5.7",
+        "fflate@0.6.10",
+        "potpack@1.0.2"
+      ]
+    },
+    {
+      "ref": "fflate@0.6.10",
+      "dependsOn": []
+    },
+    {
+      "ref": "troika-three-text@0.52.4",
+      "dependsOn": [
+        "three@0.185.1",
+        "bidi-js@1.0.3",
+        "troika-three-utils@0.52.4",
+        "troika-worker-utils@0.52.0",
+        "webgl-sdf-generator@1.1.1"
+      ]
+    },
+    {
+      "ref": "troika-three-utils@0.52.4",
+      "dependsOn": [
+        "three@0.185.1"
+      ]
+    },
+    {
+      "ref": "troika-worker-utils@0.52.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "tunnel-rat@0.1.2",
+      "dependsOn": [
+        "zustand@4.5.7"
+      ]
+    },
+    {
+      "ref": "zustand@4.5.7",
+      "dependsOn": [
+        "react@19.2.4",
+        "use-sync-external-store@1.6.0"
+      ]
+    },
+    {
+      "ref": "use-sync-external-store@1.6.0",
+      "dependsOn": [
+        "react@19.2.4"
+      ]
+    },
+    {
+      "ref": "utility-types@3.11.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "webgl-constants@1.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "webgl-sdf-generator@1.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "zustand@5.0.14",
+      "dependsOn": [
+        "react@19.2.4",
+        "use-sync-external-store@1.6.0"
+      ]
+    }
+  ]
+}

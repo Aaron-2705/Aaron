@@ -1,0 +1,71 @@
+# Gitleaks configuration for the AARON portfolio.
+#
+# Extends the upstream default ruleset (AWS, GCP, Stripe, Slack, GitHub, private
+# keys and ~150 more) and adds the credentials this project actually handles.
+# Enforced by .github/workflows/security.yml on every push and pull request, and
+# locally by .githooks/pre-commit.
+
+title = "aaron-gitleaks"
+
+[extend]
+useDefault = true
+
+# ---------------------------------------------------------------------------
+# Project-specific rules
+# ---------------------------------------------------------------------------
+
+[[rules]]
+id = "resend-api-key"
+description = "Resend API key (contact form relay)"
+# Resend issues keys as re_ followed by a base62 secret.
+regex = '''\bre_[A-Za-z0-9_-]{16,}\b'''
+keywords = ["re_"]
+entropy = 3.0
+
+[[rules]]
+id = "contact-env-assignment"
+description = "A contact-form secret assigned a literal value instead of being left blank"
+# Catches RESEND_API_KEY=<something> in any committed file. The .env.example
+# template ships these keys with empty values, which this deliberately allows.
+# [ \t] rather than \s: \s spans newlines, so an empty assignment would swallow
+# the line break and report the NEXT line's key as its value.
+regex = '''(?i)\b(RESEND_API_KEY|CONTACT_TO_EMAIL|CONTACT_FROM_EMAIL)[ \t]*[:=][ \t]*['"]?[^\s'"#]+'''
+keywords = ["resend_api_key", "contact_to_email", "contact_from_email"]
+
+[[rules]]
+id = "generic-bearer-token"
+description = "Hardcoded bearer token in source"
+regex = '''(?i)authorization[ \t]*[:=][ \t]*['"]?bearer[ \t]+[A-Za-z0-9._-]{16,}'''
+keywords = ["bearer"]
+
+# ---------------------------------------------------------------------------
+# Allowlist
+# ---------------------------------------------------------------------------
+
+[allowlist]
+description = "Paths and values that are not secrets"
+
+paths = [
+  # Vendored binary decoder and 3D assets: high-entropy by nature, no secrets.
+  '''public/draco/.*''',
+  '''public/models/.*\.glb''',
+  '''public/geo/.*\.json''',
+  # Lockfile integrity hashes are base64 digests, not credentials.
+  '''package-lock\.json''',
+  # Build output and dependencies.
+  '''\.next/.*''',
+  '''node_modules/.*''',
+  # The generated SBOM carries integrity hashes for the same reason.
+  '''docs/security/sbom\.cdx\.json''',
+]
+
+regexTargets = ["match"]
+regexes = [
+  # The template ships every key with an EMPTY value on purpose. Only an empty
+  # assignment is allowed through; a populated one still fires.
+  '''(RESEND_API_KEY|CONTACT_TO_EMAIL|CONTACT_FROM_EMAIL)\s*=\s*$''',
+  # Resend's public onboarding sender is documentation, not a credential.
+  '''onboarding@resend\.dev''',
+  # The owner's own published contact address appears throughout the site copy.
+  '''dhwanitsukhadiya685@gmail\.com''',
+]

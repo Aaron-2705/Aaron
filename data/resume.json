@@ -1,0 +1,91 @@
+{
+  "_comment": "Single source of truth for the resume. data/resume.ts types it for the inline viewer; scripts/build-resume-pdf.py renders it to public/resume/. Edit here, then re-run the generator. Phone deliberately absent: this file is published, and the record it produces is downloadable by anyone - never edit the PDF or the viewer directly.",
+  "name": "DHWANIT SUKHADIYA",
+  "title": "Cybersecurity & IT Support Specialist",
+  "contact": {
+    "email": "dhwanitsukhadiya685@gmail.com",
+    "location": "Folsom, CA",
+    "linkedin": "linkedin.com/in/dhwanit-sukhadiya"
+  },
+  "summary": "Computer Engineering graduate with hands-on experience in desktop support, networking, Windows Server administration, and security home-labs. Builds and hardens Windows Server and Active Directory environments, models routed and switched networks, and analyzes live traffic. Focused on building secure, reliable IT infrastructure while continuing to develop offensive and defensive fundamentals.",
+  "education": [
+    {
+      "institution": "LDRP Institute of Technology and Research",
+      "credential": "Bachelor of Technology in Computer Engineering",
+      "detail": "CGPA 7.4 / 10",
+      "location": "Ahmedabad, India",
+      "period": "August 2023 - April 2026"
+    },
+    {
+      "institution": "VPMP Polytechnic",
+      "credential": "Diploma in Computer Engineering",
+      "detail": "CGPA 8.5 / 10",
+      "location": "Ahmedabad, India",
+      "period": "June 2020 - May 2023"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Desktop & Network Support Intern",
+      "org": "H&B Infotech",
+      "period": "November 2025 - April 2026",
+      "bullets": [
+        "Supported end users with desktop, hardware, software and Windows troubleshooting.",
+        "Assisted with LAN/WAN infrastructure including routers, switches and access points.",
+        "Diagnosed network connectivity issues and restored services.",
+        "Managed user accounts, permissions, ticket documentation and IT assets."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "label": "Networking",
+      "items": "TCP/IP, DNS, DHCP, VLANs, routing and switching fundamentals, LAN/WAN, Cisco CLI"
+    },
+    {
+      "label": "Systems",
+      "items": "Windows 10/11, Windows Server 2022, Active Directory, Group Policy, user management, Linux"
+    },
+    {
+      "label": "Security & Analysis",
+      "items": "Wireshark, Nmap, packet analysis, hardware troubleshooting, ticket documentation"
+    },
+    {
+      "label": "Cloud",
+      "items": "AWS fundamentals"
+    },
+    {
+      "label": "Tools",
+      "items": "Cisco Packet Tracer, VirtualBox, Microsoft Office"
+    },
+    {
+      "label": "Learning / lab",
+      "items": "Kali Linux, Burp Suite, Metasploit, OSINT techniques (home-lab practice, not production experience)"
+    },
+    {
+      "label": "Programming",
+      "items": "Python, SQL, HTML, CSS"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Operation BLACKGATE - Windows Server & Active Directory lab",
+      "bullets": [
+        "Deployed a Windows Server 2022 domain in VirtualBox with DNS, DHCP and a full OU structure.",
+        "Configured users, groups, Group Policy objects and password policy for centralized management.",
+        "Compared misconfigured and hardened states to see how each control changes the risk picture."
+      ]
+    },
+    {
+      "name": "Operation WIRETAP - routed network & traffic analysis lab",
+      "bullets": [
+        "Modeled a multi-VLAN routed and switched network in Cisco Packet Tracer with segmented traffic.",
+        "Captured and analyzed live traffic in Wireshark, and mapped hosts and services with Nmap.",
+        "Resolved connectivity faults using structured, systematic troubleshooting."
+      ]
+    }
+  ],
+  "certifications": [
+    "Cyber Security, Grade A+ - H&B Computer Education"
+  ]
+}

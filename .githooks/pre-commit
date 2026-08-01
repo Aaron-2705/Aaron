@@ -1,0 +1,12 @@
+#!/bin/sh
+# Block a commit that would introduce a secret.
+#
+# Enable once per clone:  git config core.hooksPath .githooks
+# Prefers gitleaks when it is installed; falls back to the bundled scanner so
+# the check is never silently skipped.
+
+if command -v gitleaks >/dev/null 2>&1; then
+  gitleaks protect --staged --config .gitleaks.toml --redact || exit 1
+else
+  node scripts/secret-scan.mjs --staged || exit 1
+fi

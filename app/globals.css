@@ -1,0 +1,414 @@
+@import "tailwindcss";
+
+/* =============================================================
+   AARON THEME SYSTEM
+   Themes are applied via data-theme on <html>.
+   Default theme: cyber (Black / Carbon / Neon Cyan / Red Alert)
+   ============================================================= */
+
+:root,
+:root[data-theme="cyber"] {
+  --background: #08090f;
+  --surface: #0e1118; /* carbon */
+  --surface-elevated: #161b24;
+  --border: #242c38;
+  --foreground: #e9eff5;
+  --muted: #97a1ac;
+  --muted-strong: #b8c0cb; /* legible dim text (≥4.5:1 on surfaces) */
+  --accent: #00f0ff; /* neon cyan */
+  --accent-dim: #00f0ff33;
+  --alert: #ff2a3c; /* red alert */
+  --alert-dim: #ff2a3c33;
+  --success: #2bd576;
+  --gold: #e0b464; /* warning tier, distinct from accent and alert */
+  --glow: 0 0 24px var(--accent-dim);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.3s;
+  --dur-base: 0.5s;
+  --dur-slow: 0.8s;
+
+  /* Mercury hero palette — calm onyx + single cobalt, used only in the
+     top hero + loader to establish a premium 'aspiration' zone before the
+     cyberpunk system takes over. */
+  --onyx: #171721;
+  --graphite: #1e1e2a;
+  --cobalt: #5266eb;
+  --ivory: #ededf3;
+  --ash: #c3c3cc;
+}
+
+/* Unlockable themes (via AARON root shell) */
+:root[data-theme="ironman"] {
+  --background: #0a0505;
+  --surface: #140b0b;
+  --surface-elevated: #1d1210;
+  --border: #2a1c18;
+  --foreground: #f3e9df;
+  --muted: #a08d80;
+  --muted-strong: #c9b8ab;
+  --accent: #ffb347;
+  --accent-dim: #ffb34733;
+  --alert: #ff2a3c;
+  --alert-dim: #ff2a3c33;
+  --success: #2bd576;
+  /* Separated from --accent (#ffb347) so severity bands stay distinguishable. */
+  --gold: #e8d27a;
+}
+
+:root[data-theme="matrix"] {
+  --background: #030805;
+  --surface: #050f08;
+  --surface-elevated: #0a1810;
+  --border: #12241a;
+  --foreground: #d8f5e0;
+  --muted: #6f9c7f;
+  --muted-strong: #94c2a3;
+  --accent: #00ff66;
+  --accent-dim: #00ff6633;
+  --alert: #ff2a3c;
+  --alert-dim: #ff2a3c33;
+  --success: #2bd576;
+  --gold: #b8ff8a;
+}
+
+:root[data-theme="stealth"] {
+  --background: #07080a;
+  --surface: #0a0b0d;
+  --surface-elevated: #101216;
+  --border: #181b20;
+  --foreground: #dfe4e9;
+  --muted: #7d8791;
+  --muted-strong: #a3adb8;
+  --accent: #9aa7b3;
+  --accent-dim: #9aa7b333;
+  --alert: #ff2a3c;
+  --alert-dim: #ff2a3c33;
+  --success: #2bd576;
+  --gold: #cbb894;
+}
+
+/* ============================================================
+   PREMIUM MID-DARK THEMES (Iron-Man / JARVIS cyber-premium).
+   Not near-black — lifted navy/graphite base + glass + glow.
+   Each also sets the hero (onyx/cobalt/ivory/ash) so the whole
+   site + hero recolor together. Gold = warm micro-accent.
+   ============================================================ */
+:root[data-theme="jarvis"] {
+  --background: #0b1220;
+  --surface: #111c30;
+  --surface-elevated: #172a45;
+  --border: #274063;
+  --foreground: #eaf3ff;
+  --muted: #8fa6c4;
+  --muted-strong: #b9cbe6;
+  --accent: #35e0ff;
+  --accent-dim: #35e0ff33;
+  --alert: #ff5a5f;
+  --alert-dim: #ff5a5f33;
+  --success: #38d39f;
+  --gold: #ffcf6b;
+  --glow: 0 0 28px var(--accent-dim);
+  --onyx: #0b1220;
+  --graphite: #111c30;
+  --cobalt: #35e0ff;
+  --ivory: #eaf3ff;
+  --ash: #8fa6c4;
+}
+
+:root[data-theme="arc"] {
+  --background: #12111a;
+  --surface: #1b1922;
+  --surface-elevated: #241f2b;
+  --border: #3a2f38;
+  --foreground: #f5ece8;
+  --muted: #b09a94;
+  --muted-strong: #d8c7c0;
+  --accent: #ffb347;
+  --accent-dim: #ffb34733;
+  --alert: #ff3b3b;
+  --alert-dim: #ff3b3b33;
+  --success: #38d39f;
+  /* Must differ from --accent (#ffb347): the severity chart maps notice to
+     accent and warning to gold, and identical values collapse two bands. */
+  --gold: #e8d27a;
+  --glow: 0 0 28px var(--accent-dim);
+  --onyx: #12111a;
+  --graphite: #1b1922;
+  --cobalt: #ffb347;
+  --ivory: #f5ece8;
+  --ash: #b09a94;
+}
+
+:root[data-theme="steel"] {
+  --background: #10131c;
+  --surface: #171b28;
+  --surface-elevated: #1f2536;
+  --border: #2c3448;
+  --foreground: #eef1f8;
+  --muted: #93a0bb;
+  --muted-strong: #bcc6dc;
+  --accent: #3f74ff;
+  --accent-dim: #3f74ff33;
+  --alert: #ff5a5f;
+  --alert-dim: #ff5a5f33;
+  --success: #38d39f;
+  --gold: #e6b980;
+  --glow: 0 0 28px var(--accent-dim);
+  --onyx: #10131c;
+  --graphite: #171b28;
+  --cobalt: #3f74ff;
+  --ivory: #eef1f8;
+  --ash: #93a0bb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-border-dim: var(--border);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-strong: var(--muted-strong);
+  --color-accent: var(--accent);
+  --color-alert: var(--alert);
+  --color-success: var(--success);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-clash);
+  --font-hud: var(--font-orbitron);
+  --font-serif: var(--font-fraunces);
+  --font-inter: var(--font-inter);
+  --color-onyx: var(--onyx);
+  --color-graphite: var(--graphite);
+  --color-cobalt: var(--cobalt);
+  --color-ivory: var(--ivory);
+  --color-ash: var(--ash);
+}
+
+/* ============================================================
+   TYPE SCALE — one system. Clash = display/headings, Geist =
+   body/UI, Geist Mono = terminal labels. Sizes are fluid.
+   ============================================================ */
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+.t-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: clamp(2.75rem, 9vw, 6rem);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+}
+.t-h2 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  word-spacing: 0.14em;
+}
+.t-h3 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+.t-body {
+  font-size: clamp(0.9rem, 1.6vw, 1rem);
+  line-height: 1.6;
+}
+.t-body-sm {
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+.t-eyebrow {
+  font-family: var(--font-mono), monospace;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+}
+.t-caption {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.6875rem;
+  line-height: 1.5;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 80% 50% at 15% -10%, #00f0ff0d, transparent),
+    radial-gradient(ellipse 70% 50% at 90% 110%, #7c5cff12, transparent),
+    radial-gradient(ellipse 60% 40% at 85% 20%, #ff5e7a08, transparent), var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, Arial, sans-serif);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* DecryptedText scramble cells.
+   The REAL character stays in normal flow: it pins the cell width (so a
+   scramble glyph of a different advance width can never re-wrap the text and
+   shift the page) and it keeps the paragraph selectable, copyable and
+   extractable. The scramble glyph is painted as a pseudo-element, which never
+   enters innerText or a text selection, and is absolutely positioned so it
+   cannot affect layout. */
+.dt-cell {
+  position: relative;
+  display: inline-block;
+}
+
+.dt-cell[data-glyph] > .dt-real {
+  opacity: 0;
+}
+
+.dt-cell[data-glyph]::after {
+  content: attr(data-glyph);
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+}
+
+/* Endless marquee for StatusTicker */
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-track {
+  animation: ticker-scroll 30s linear infinite;
+}
+
+/* Same marquee, much slower. The hero's identity strip is ambient texture
+   rather than a feed anyone is meant to read along with, so it drifts. Reduced
+   motion is already covered by the global block at the foot of this file. */
+/* One half of the track is ~2050px, so 45s puts the rail at roughly 45px/sec:
+   clearly travelling, still calm enough to read a value as it passes. At the
+   120s it started on it moved 17px/sec, which registers as static. */
+.mrz-track {
+  animation: ticker-scroll 45s linear infinite;
+  will-change: transform;
+}
+
+/* Data-flow pulse along constellation spine links */
+@keyframes link-flow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+.link-flow {
+  animation: link-flow 1.6s linear infinite;
+}
+
+/* Packet flow along built topology links in THE RANGE.
+   CSS animation on purpose: the prefers-reduced-motion block at the bottom of
+   this file clamps it to a static dashed line, which SVG SMIL would ignore. */
+@keyframes packet-flow {
+  to {
+    stroke-dashoffset: -32;
+  }
+}
+
+.packet-flow {
+  animation: packet-flow 2.2s linear infinite;
+}
+
+/* Focus indicator for the SVG buttons in THE RANGE.
+   `outline` on an SVG element is not painted by every engine, and these are 16
+   focusable controls on a graded-accessibility page, so the ring is drawn as a
+   real <rect> toggled by opacity, which paints everywhere. */
+.topo-focus-ring {
+  opacity: 0;
+}
+
+.topo-node:focus-visible .topo-focus-ring {
+  opacity: 1;
+}
+
+/* Terminal caret */
+@keyframes caret-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.caret-blink {
+  animation: caret-blink 1.05s steps(1) infinite;
+}
+
+/* Breathing ring around the constellation core */
+@keyframes core-ring {
+  0%,
+  100% {
+    r: 48;
+    stroke-opacity: 0.25;
+  }
+  50% {
+    r: 56;
+    stroke-opacity: 0.08;
+  }
+}
+
+.core-ring {
+  animation: core-ring 3.2s ease-in-out infinite;
+}
+
+/* Link underline draw — scales in from the left on hover/focus */
+.link-draw {
+  position: relative;
+}
+
+.link-draw::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.link-draw:hover::after,
+.link-draw:focus-visible::after {
+  transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

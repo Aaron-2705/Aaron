@@ -1,0 +1,50 @@
+{
+  // Press F5 in VS Code to run the whole site.
+  //
+  // A Next.js app has no single "main" file you execute - the entry point is a
+  // dev server that compiles app/, components/ and data/ on demand. This config
+  // is the closest equivalent: one action that starts that server and opens the
+  // browser at it.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run AARON website",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npm",
+      // npm resolves to npm.cmd on Windows; without this VS Code cannot spawn it.
+      "windows": { "runtimeExecutable": "npm.cmd" },
+      "runtimeArgs": ["run", "dev"],
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"],
+      // Waits for Next to print its address, then opens it. Deliberately loose:
+      // it matches whatever port Next settles on rather than assuming 3000.
+      "serverReadyAction": {
+        "pattern": "(https?://localhost:[0-9]+)",
+        "uriFormat": "%s",
+        "action": "openExternally"
+      }
+    },
+    {
+      // The production build. Use this before shipping, and for any Lighthouse
+      // or security scan: the dev server relaxes the Content-Security-Policy
+      // with 'unsafe-eval' for Turbopack hot reload, so auditing it reports a
+      // finding that does not exist in what actually deploys.
+      "name": "Run AARON website (production build)",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npm",
+      "windows": { "runtimeExecutable": "npm.cmd" },
+      "runtimeArgs": ["run", "serve"],
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"],
+      "serverReadyAction": {
+        "pattern": "(https?://localhost:[0-9]+)",
+        "uriFormat": "%s",
+        "action": "openExternally"
+      }
+    }
+  ]
+}
